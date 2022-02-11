@@ -354,5 +354,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb85526fea1e8fb48acc86dedecd1980, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myForward: {fileID: 0}
+  myForward: {fileID: 358944036}
   mySpeed: 1
+  myRotationSpeed: 1

@@ -8,6 +8,7 @@ public class ShipController : MonoBehaviour
 {
     [SerializeField] private Transform myForward;
     [SerializeField] private float mySpeed;
+    [SerializeField] private float myRotationSpeed;
 
     private Rigidbody2D rb2D;
 
@@ -17,9 +18,14 @@ public class ShipController : MonoBehaviour
 
     private void FixedUpdate() {
         UpdateVelocity();
+        updateRoation();
     }
 
     private void UpdateVelocity() {
         rb2D.velocity = mySpeed * myForward.up;
+    }
+
+    private void updateRoation() {
+        rb2D.angularVelocity = myRotationSpeed;
     }
 }
